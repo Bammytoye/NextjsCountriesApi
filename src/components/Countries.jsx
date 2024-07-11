@@ -27,12 +27,12 @@ const ApiCountries = () => {
                     {countriesDetails.map((country) => (
                         <div key={country.name.common} className="bg-white shadow-md rounded-lg overflow-hidden">
                             <div className="p-6">
-                                <img src={country.flags.svg} alt={`${country.name.common} flag`} width="100" className='mx-auto border border-gray-500 p-2' />
+                                <img src={country.flags.svg} alt={`${country.name.common} flag`} width="100" className='mx-auto border border-gray-500 p-2 rounded-full cursor-pointer' />
                                 <h2 className="text-2xl font-bold text-gray-900 mb-2 border-l-2 border-gray-900 px-2">{country.name.common}</h2>
-                                <p className="text-gray-600 mb-2 border-l-2 border-gray-400 px-2 border-b-2 ">Capital: {country.capital?.[0]}</p>
-                                <p className="text-gray-600 mb-2 border-l-2 border-gray-400 px-2 border-b-2 ">Population: {country.population.toLocaleString()}</p>
-                                <p className="text-gray-600 mb-2 border-l-2 border-gray-400 px-2 border-b-2 ">Region: {country.region}</p>
-                                <p className="text-gray-600 mb-2 border-l-2 border-gray-400 px-2 border-b-2 ">Continents: {country.continents?.[0]}</p>
+                                <p className="text-gray-600 mb-2 border-l-2 border-gray-200 rounded-full px-2 border-b-2 ">Capital: {country.capital?.[0]}</p>
+                                <p className="text-gray-600 mb-2 border-l-2 border-gray-200 rounded-full px-2 border-b-2 ">Population: {country.population.toLocaleString()}</p>
+                                <p className="text-gray-600 mb-2 border-l-2 border-gray-200 rounded-full px-2 border-b-2 ">Region: {country.region}</p>
+                                <p className="text-gray-600 mb-2 border-l-2 border-gray-200 rounded-full px-2 border-b-2 ">Continents: {country.continents?.[0]}</p>
                             </div>
                         </div>
                     ))}
